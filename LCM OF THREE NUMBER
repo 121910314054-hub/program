@@ -1,0 +1,22 @@
+# lcm and gcd of 3 number
+from math import gcd
+
+def l(n,s,r):
+    g1 = gcd(s,r)
+    g2 = gcd(n,g1)
+    l1 =  s*r//g1
+    l2 =  n*l1//gcd(n,l1)
+    return (l1,g2)
+
+n = int(input("enter the first number"))
+s = int(input("enter the second numbert"))
+r = int(input("enter the third number"))
+(r1,r2) = l(n,s,r)
+print("The lcm of "+str(n) + "and " +str(s)+ str(r) )             
+output:
+enter the first number 21
+enter the second numbert26
+enter the third number 12
+The lcm of 21and 2612
+>>> 
+
