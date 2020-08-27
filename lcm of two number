@@ -1,0 +1,20 @@
+# lcm of two number
+a = float(input("enter the first number"))
+b = float ( input ("enter the second number"))
+if (a >b):
+    g = a
+else :
+    g = b
+    
+while (1):
+    if (g % a ==0) and (g % b ==0):
+        l = g
+        break
+    g += 1
+
+print("the lcm of two number is:",l)    
+output:
+enter the first number 21
+enter the second number 87
+the lcm of two number is: 609.0
+>>> 
