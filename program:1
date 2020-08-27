@@ -1,0 +1,22 @@
+#smallest among three number
+x = float(input("enter the first number"))
+y = float(input("enter  the second number"))
+z = float(input("enter  the third number"))
+
+#logic started
+
+if (x <= y) and (x <=z):
+    s = x
+elif (y <= x) and (y <= z):
+      s = y
+else :
+    s =z
+    
+#display
+print("the smallest of three number is:",s)    
+output:
+enter the first number 21
+enter  the second number 1987
+enter  the third number  1995
+the smallest of three number is: 21.0
+>>> 
