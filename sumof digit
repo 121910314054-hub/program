@@ -1,0 +1,9 @@
+x = int(input("enter the two digit  number"))
+t =(x/10)
+z = (x%10)
+s =  (t+z)
+print("the sum of two digit numberis",s)
+output: 
+enter the two digit  number 21
+the sum of two digit numberis 3.1
+>>> 
