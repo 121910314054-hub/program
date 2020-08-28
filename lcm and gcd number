@@ -1,0 +1,19 @@
+# lcm and gcd of 2 number
+from math import gcd
+
+def l(n,s):
+    g1 = gcd(n,s)
+    g2 = gcd(n,g1)
+    l1 =  n*s//g1
+    l2 =  n*l1//gcd(n,l1)
+    return (l1,g2)
+
+n = int(input("enter the first number"))
+s = int(input("enter the second number"))
+(r1) = l(n,s)
+print("The lcm of "+str(n) + "and " +str(s) )            
+    output:
+   ============
+enter the first number1
+enter the second number2
+The lcm of 1and 2  is 2
