@@ -14,12 +14,16 @@ print("the multiplication of three number is",mul)
 div = (float)(a/b/c)
 print("the division of three number  is",div)
 #division
+mod = (float)(a%b%c)
+print ("the modlus of three number is",mod)
+#modlus
 OUTPUT:
 enter the first number 21
-enter the second number 19
-enter the third  number 87
+enter the second number19
+enter the third  number87
 the sum of three number is 127
 the subtraction of three number is -85
 the multiplication of three number is 34713
 the division of three number  is 0.012704174228675136
+the modlus of three number is 2.0
 >>> 
