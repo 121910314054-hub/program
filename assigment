@@ -1,0 +1,25 @@
+#Performs all the five arithmetic operations
+a = float(input("enter the first number"))
+b = float(input("enter the second number"))
+c = float(input("enter the third  number"))
+sum = (int)(a+b+c)
+print("the sum of three number is",sum)
+#addition
+sub  = (int)(a-b-c)
+print("the subtraction of three number is",sub)
+# subtraction
+mul = (int)(a*b*c)
+print("the multiplication of three number is",mul)
+#multiplication
+div = (float)(a/b/c)
+print("the division of three number  is",div)
+#division
+OUTPUT:
+enter the first number 21
+enter the second number 19
+enter the third  number 87
+the sum of three number is 127
+the subtraction of three number is -85
+the multiplication of three number is 34713
+the division of three number  is 0.012704174228675136
+>>> 
