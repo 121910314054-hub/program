@@ -1,0 +1,14 @@
+x = float(input("enter the first number"))
+y = float(input("enter the second number"))
+t = x
+x= y
+y = t
+print("the  value of x is",x)
+print("the value of y is",y)
+# SWAPING OF TWO NUMBER        
+OUTPUT:
+enter the first number 21
+enter the second number 19
+the  value of x is 19.0
+the value of y is 21.0
+>>> 
