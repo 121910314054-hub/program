@@ -1,3 +1,3 @@
 # program
-assigment
+daily 2
 
