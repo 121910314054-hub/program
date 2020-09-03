@@ -1,0 +1,25 @@
+## Copy the contents from one array to another array
+# intializing an array:
+A1 = [ 19,21,87,95]
+#creating array 2
+B1 = [None] *len(A1)
+L  =  len(A1)
+# copying element start
+for i in range (0,L):
+    B1[i] = A1[i]
+#displaying element of A1
+print("element of original array:")
+print(A1)
+#displaying  element of B1
+print("element of new array:")
+for i in range (0,len(B1)):
+    print(B1[i])
+    OUTPUT:
+   element of original array:
+[19, 21, 87, 95]
+element of new array:
+19
+21
+87
+95
+>>>  
