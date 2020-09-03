@@ -1,0 +1,26 @@
+##Copy the contents from one array to another array in reverse order
+#INTIALZING ARRAYS ELEMENT
+N1 = [ 19,21,87,95]
+#creating arrays
+N2 = [None] * len(N1)
+l2 =  len(N1)
+#reversing starts
+for i in range(0,l2):
+    N2[i] = N1[l2-i-1]
+#displaying elerments of array
+print("elements of original array")
+print(N1)
+#displaying array2
+print("element of reverse array")
+for i in range (0,len(N2)):
+    print(N2[i])
+    OUTPUT:
+    elements of original array
+[19, 21, 87, 95]
+element of reverse array
+95
+87
+21
+19
+>>> 
+    
