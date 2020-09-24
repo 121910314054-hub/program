@@ -1,0 +1,25 @@
+# Implement linear search with user functions and dynamic inputs
+def ls(s1,z):
+    for i in range(len(s1)):
+        if(s1[i] ==z):
+            print("Element is found")
+            return i
+    return-1      
+        
+s1 = (str)(input("Enter the element in the array"))
+for i in range(len(s1)):
+    print(s1[i]);
+z = (str)(input("Enter the  element ")) 
+print("Element found at the index"+str(ls(s1,z)))    
+OUTPUT:
+Enter the element in the array ROHIT
+ 
+R
+O
+H
+I
+T
+Enter the  element R
+Element is found
+Element found at the index1
+>>> 
