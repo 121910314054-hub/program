@@ -1,0 +1,12 @@
+ #Implement linear search
+def linearsearch(s, p):
+   for i in range(len(s)):
+      if s[i] == p:
+         return i
+   return -1
+s = ['R','O','H','I','T']
+p = 'H'
+print("element found at index "+str(linearsearch(s,p)))
+OUTPUT:
+element found at index 2
+>>> 
