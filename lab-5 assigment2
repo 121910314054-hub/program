@@ -1,0 +1,22 @@
+#Create a linked list with inputs from user console.
+l = [] 
+ 
+n = int(input("Enter number of elements : ")) 
+
+  
+for i in range(0, n): 
+	element = (int)(input("enter the element:")) 
+
+	l.append(element) 
+	
+print(l)
+
+OUTPUT:
+Enter number of elements : 5
+enter the element:21
+enter the element:19
+enter the element:87
+enter the element:95
+enter the element:12
+[21, 19, 87, 95, 12]
+>>> 
