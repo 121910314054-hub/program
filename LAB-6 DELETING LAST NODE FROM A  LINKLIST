@@ -1,0 +1,83 @@
+#Delete the last node from a given linked list
+#Node class 
+class Node: 
+
+	#_init _is userdefined function 
+	def __init__(s, n): 
+		s.n = n 
+		s.next = None
+#linklist class
+class LinkedList: 
+
+	
+	def __init__(s): 
+		s.head = None
+
+	 
+	def push(s, new_n): 
+		new_node = Node(new_n) 
+		new_node.next = s.head 
+		s.head = new_node
+	#deleteNode is userdefined class
+	##Deleting a node from  list logic starts	
+	def deleteNode(s, ne): 
+		
+		
+		temp = s.head 
+
+
+		if (temp is not None): 
+			if (temp.n == ne): 
+				s.head = temp.next
+				temp = None
+				return
+		while(temp is not None): 
+			if temp.n == ne: 
+				break
+			prev = temp 
+			temp = temp.next
+
+		
+		if(temp == None): 
+			return
+
+		
+		prev.next = temp.next
+
+		temp = None
+
+
+	#printlist a userdefined function
+	def printList(s): 
+		temp = s.head 
+		while(temp): 
+			print (" %d" %(temp.n)), 
+			temp = temp.next
+
+
+
+llist = LinkedList() 
+llist.push(95) 
+llist.push(87) 
+llist.push(19) 
+llist.push(21) 
+#Displaying the  output
+print ("Created Linked List: ") 
+llist.printList() 
+llist.deleteNode(95) 
+print ("\nLinked List after  deleting first node is:") 
+llist.printList() 
+OUTPUT:
+Created Linked List: 
+ 21
+ 19
+ 87
+ 95
+
+Linked List after  deleting first node is:
+ 21
+ 19
+ 87
+>>> 
+
+
