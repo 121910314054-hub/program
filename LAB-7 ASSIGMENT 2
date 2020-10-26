@@ -1,0 +1,90 @@
+#	Identify the biggest and smallest key in a doubly linked list containing integers.
+class Node: 
+	
+	
+	def __init__(self, data): 
+		
+		
+		self.data = data 
+		
+		 
+		self.next = None
+	
+
+class LinkedList: 
+
+	
+	def __init__(self): 
+		
+		
+		self.head = None
+
+	
+	def push(self, new_data): 
+	
+		
+		new_node = Node(new_data) 
+
+		
+		new_node.next = self.head 
+
+		 
+		self.head = new_node 
+
+	 
+	def findLargestAndSecondLargest(self): 
+
+		 
+		Head = self.head 
+
+		 
+		val1 = Head.data 
+		val2 = Head.next.data 
+		Max = max(val1, val2) 
+		second_max = min(val1, val2) 
+
+		
+		Head = Head.next.next
+
+		
+		while(Head != None): 
+
+			
+			if(Head.data > Max): 
+
+				
+				second_max = Max
+				Max = Head.data 
+
+			
+			elif(Head.data > second_max): 
+
+				
+				second_max = Head.data 
+
+			
+			Head = Head.next
+
+		
+		print("Largest = ", Max) 
+		print("Second Largest = ", second_max) 
+
+
+if __name__ == '__main__': 
+
+	 
+	head = LinkedList() 
+
+	
+	head.push(21) 
+	head.push(19) 
+	
+	
+	head.findLargestAndSecondLargest() 
+  OUTPUT:
+  Largest =  21
+Second Largest =  19
+>>> 
+			
+
+
