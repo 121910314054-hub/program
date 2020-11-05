@@ -1,0 +1,46 @@
+#Evalute the profix expression
+
+def profix(n): #is_opperand is user difined function
+	
+	return n.isdigit() 
+
+
+def evaluate(expression): 
+	
+	stack = [] 
+
+	
+	for n in expression[::-1]: 
+
+		
+		if profix(n): 
+			stack.append(int(n)) 
+
+		else: 
+			
+			s = stack.pop() 
+			s2 = stack.pop() 
+
+			if n == '+': 
+				stack.append(s + s2) 
+
+			elif n == '-': 
+				stack.append(s - s2) 
+
+			elif n == '*': 
+				stack.append(s * s2) 
+
+			elif n == '/': 
+				stack.append(s / s2)
+				
+                       
+	return stack.pop() 
+
+
+
+if __name__ == "__main__": 
+	test_expression = "+21*87"
+	print(evaluate(test_expression)) 
+  OUTPUT:
+  3
+>>> 
