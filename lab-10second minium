@@ -1,0 +1,16 @@
+N=[]
+n=int(input("Enter the size"))
+for i in range(n):
+    val=int(input("Enter the number in arrays"))
+    N.append(val)
+N.sort()
+print("Minium second number =",N[1])
+OUTPUT:
+Enter the size 5
+Enter the number in arrays 1
+Enter the number in arrays2
+Enter the number in arrays3
+Enter the number in arrays4
+Enter the number in arrays5
+Minium second number = 2
+>>> 
