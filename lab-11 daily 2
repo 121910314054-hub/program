@@ -1,0 +1,130 @@
+ #Create a list with the user input data. Implement selection sort (Iterative).
+class Node: 
+	
+	def __init__(self, val): 
+		self.data = val 
+		self.next = None
+
+
+def selectionSort(head): 
+
+	a = b = head 
+
+	
+	while b.next: 
+
+		c = d = b.next
+
+		
+		while d: 
+
+			if b.data > d.data: 
+
+				 
+				if b.next == d: 
+
+					
+					if b == head: 
+
+						
+						b.next = d.next
+						d.next = b 
+
+						
+						b, d = d, b 
+						c = d 
+
+						
+						head = b 
+
+						
+						d = d.next
+					
+					
+					else: 
+
+						
+						b.next = d.next
+						d.next = b 
+						a.next = d 
+
+						 
+						b, d = d, b 
+						c = d 
+
+						
+						d = d.next
+					
+				
+				else: 
+
+					
+					if b == head: 
+
+						
+						r = b.next
+						b.next = d.next
+						d.next = r 
+						c.next = b 
+
+						
+						b, d = d, b 
+						c = d 
+
+						 
+						d = d.next
+
+						
+						head = b 
+					
+					
+					else: 
+
+						 
+						r = b.next
+						b.next = d.next
+						d.next = r 
+						c.next = b 
+						a.next = d 
+
+						
+						b, d = d, b 
+						c = d 
+
+						 
+						d = d.next
+					
+			else: 
+
+				
+				c = d 
+				d = d.next
+
+		a = b 
+		b = b.next
+	
+	return head 
+
+ 
+def printList(head): 
+
+	while head: 
+		print(head.data, end = " ") 
+		head = head.next
+
+ 
+if __name__ == "__main__":
+    x = int(input("enter the number1:"))
+    y = int(input("enter the number 2:"))
+    z = int(input("enter the number3:"))
+    head = Node(x)
+    head.next = Node(y)
+    head.next.next = Node(z)
+    head = selectionSort(head)
+    printList(head)
+    OUTPUT:
+    enter the number1:87
+enter the number 2:95
+enter the number3:21
+21 87 95 
+>>> 
