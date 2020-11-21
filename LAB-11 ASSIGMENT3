@@ -1,0 +1,74 @@
+# Create a list with the user input data. Implement merge sort (Recursive).
+def Neh(ne):
+    if len(ne) > 1:
+ 
+        
+        mid = len(ne)//2
+ 
+        
+        L = ne[:mid]
+ 
+        
+        R = ne[mid:]
+ 
+        Neh(L)
+ 
+       
+        Neh(R)
+ 
+        i = j = k = 0
+ 
+       
+        while i < len(L) and j < len(R):
+            if L[i] < R[j]:
+                ne[k] = L[i]
+                i += 1
+            else:
+                ne[k] = R[j]
+                j += 1
+            k += 1
+ 
+       
+        while i < len(L):
+            ne[k] = L[i]
+            i += 1
+            k += 1
+ 
+        while j < len(R):
+            ne[k] = R[j]
+            j += 1
+            k += 1
+ 
+
+ 
+ 
+def N(ne):
+    for i in range(len(ne)):
+        print(ne[i], end=" ")
+    print()
+ 
+ 
+
+if __name__ == '__main__':
+    ne = [87, 95, 21]
+    print("Given array is", end="\n")
+    N(ne)
+    Neh(ne)
+    print("Sorted array is: ", end="\n")
+    N(ne)
+    output:
+    Given array is
+87 95 21 
+Sorted array is: 
+21 87 95 
+>>> 
+ 
+
+
+
+
+
+
+
+
+
