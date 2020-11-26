@@ -1,0 +1,23 @@
+class node:
+    def __init__(self,data):
+        self.data=data
+        self.right= None
+        self.left= None
+class BinaryTree:
+    def __init__(self):
+        self.root=None
+        self.root_right = None
+        self.root_left= None
+ob1=BinaryTree()
+
+ne=node(21)
+neh= node(19)
+neh1 = node(87)
+print(ne.data)
+print(neh.data)
+print(neh1.data)
+OUTPUT:
+21
+19
+87
+>>> 
