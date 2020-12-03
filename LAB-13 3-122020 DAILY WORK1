@@ -1,0 +1,94 @@
+#simple tree
+class Node: 
+	def __init__(self, data): 
+		self.data = data 
+		self.left = self.right = None
+		
+
+def Leaf(root) : 
+
+	return (not root.left and
+			not root.right) 
+
+
+def N( root) : 
+
+	 
+	if (not root) : 
+		return 0
+
+	mul = 1
+	
+	
+	q = [] 
+
+	
+	q.append(root) 
+
+	
+	while (1): 
+		
+		 
+		 
+		NodeCount = len(q) 
+
+		 
+		
+		if (NodeCount == 0) : 
+			break
+
+		
+		
+		levelSum = 0
+
+		
+		
+		
+		leafFound = False
+
+		 
+		
+		while (NodeCount > 0) : 
+			
+			
+			Node = q[0] 
+
+			 
+				
+			if (Leaf(Node)) : 
+				leafFound = True
+				levelSum += Node.data 
+
+			q.pop(0) 
+
+			 
+			if (Node.left != None) : 
+				q.append(Node.left) 
+			if (Node.right != None) : 
+				q.append(Node.right) 
+			NodeCount-=1
+				
+		 
+		 
+		if (leafFound) : 
+			mul *= levelSum 
+	
+	return mul 
+
+
+if __name__ == '__main__': 
+	root = Node(21) 
+	root.left = Node(19) 
+	root.right = Node(87) 
+	root.left.right = Node(20) 
+	root.left.left = Node(20)
+	
+
+	print("Final product value = ", 
+		N(root)) 
+    OUTPUT:
+    Final product value =  3480
+>>> 
+
+
+
